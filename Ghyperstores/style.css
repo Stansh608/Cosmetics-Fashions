@@ -1,0 +1,912 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(vhv.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    background-size: cover;
+    background-position: center;
+
+}
+.container{
+    max-width: 200px; 
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+h1{
+    color: brown;
+    font-weight: none;
+    text-align: left;
+    margin-top: auto;
+}
+.header{
+    background: radial-gradient(azure, dodgerblue);
+    margin-top: -100px;
+}
+   
+.menu-bar{
+    background: azure;
+    text-align: center;
+}
+.menu-bar ul{
+    display: inline-flex;
+    list-style: none;
+    color: blueviolet ;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color:blueviolet;
+}
+.active, .menu-bar ul li:hover{
+    background-color: dodgerblue;
+    border-radius: 3px;
+}
+.menu-bar .fa{
+    margin-right: 5px;
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: azure;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted dodgerblue;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: aqua;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+display: none;
+}
+.hover-me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: azure;
+}
+
+/*-------------searchbox------------*/
+
+.search-box{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: aqua;
+    height:  65px;
+    border-radius: 50px;
+    padding: 25px;
+}
+.search-box:hover> .search-txt{
+    width: 250px;
+    padding: 0 10px;
+}
+.search-box:hover> .search-btn{
+    background: azure;
+}
+
+.search-btn{
+    color: aqua;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.search-btn .fa{
+    position: absolute;
+}
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 25px;
+    transition: 0.5s;
+    line-height: 40px;
+    width: 500px;
+    
+}
+
+/*------------products-------------*/
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+p{
+    color: blue;
+}
+.container{
+    max-width: 1200px; 
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+ .row{
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+     justify-content: space-around;
+}
+ .col-2{
+     flex-basis: 50%;
+     min-width:400px ;
+ }
+ .col-2 img{
+     max-width: 100%;
+     padding: 50px 0;
+ }
+ .col-2 h1{
+     font-size: 50px;
+     line-height: 70px;
+     margin: 30px 0;
+ }
+ .btn{
+     display: inline-block;
+     background: azure;
+     color: dodgerblue;
+     padding: 10px 40px;
+     margin: 40px 0;
+    border-radius: 40px;
+    transition: background 0.5s;
+ }
+ .btn:hover{
+     background:blue ;
+ }
+ .header{
+     background: radial-gradient(azure,dodgerblue);
+
+ }
+ .header .row{
+     margin-top: 70px;
+ }
+.categories{
+    margin: 60px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 30px;
+    padding-right:30px ;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 20px;
+    min-width: 250px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color:blue;
+}
+.title::after{
+    content: '';
+    background:darkblue;
+    width: 60px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color:black;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 15px ;
+}
+.rating .fa{
+    color:red;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+/*-------offer-------*/
+
+.offer{
+    background: radial-gradient(azure,dodgerblue);
+    margin-top: 1px;
+    padding: 0px 0;
+}
+.col-2 .offer-img{
+    padding: 0px;
+}
+small{
+    color: blue;
+}
+
+/*-----------testmonial--------*/
+
+.testmonial{
+    padding-top: 100px;
+}
+.testmonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px white;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.testmonial .col-3 img{
+    width: 60px;
+    margin-top: 20px; 
+    border-radius: 50%;
+}
+.testmonial .col-3:hover{
+    transform: translateY(-10px);
+}
+.fa fa-quote-left{
+    font-size: 35px;
+    color: blue;
+}
+.col-3 p{
+    font-size: 14px;
+    margin: 14px 0;
+    color: blueviolet;
+}
+.testmonial .col-3 h3{
+    font-weight: 600;
+    color:blueviolet ;
+    font-size: 15px;
+    }
+
+/*------brands-----*/
+.brands{
+    margin:100px auto;
+}
+.col-5{
+width: 150px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+/*----------payment details----------*/
+
+.payment{
+    background-color: azure;
+    width: 500px;
+    padding: 25px;
+    margin: 25px auto 0;
+    box-shadow: 0px 0px 20px azure;
+    border-radius: 10px;
+}
+.payment h2{
+    background-color: white;
+    color: dodgerblue;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+    border: 1px dashed dodgerblue;
+}
+.payment h4{
+    padding-bottom: 5px;
+    color: aqua;
+}
+.input-group{
+    margin-bottom: 8px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+.input-box{
+    width: 100%;
+    margin-right: 12px;
+    position: block;
+}
+.input-box:last-child{
+    margin-right: 0;
+}
+.input-box .name{
+    padding: 14px 10px 14px 50px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    border-radius: 3px;
+    color: black;
+}
+.input-box .name:focus, .dav:focus{
+    -webkit-box-shadow: 0 0 2px 1px dodgerblue;
+    -moz-box-shadow: 0 0 2px 1px dodgerblue;
+    box-shadow: 0 0 2px 1px dodgerblue;
+    border: 1px solid dodgerblue;
+}
+.input-box .icon{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    color: black;
+    background-color: white;
+    border-radius: 2px 0 0 2px;
+    transition: 0.5s;
+    font-size: 18px;
+    pointer-events: none;
+    border: 1px solid blue;
+    border-right: none;
+}
+.name:focus+.icon{
+    background-color: dodgerblue;
+    color: azure;
+    border: 1px solid dodgerblue;
+    border: none;
+    transition: 1s;
+}
+.dob{
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    background-color: azure;
+    transition: 0.5s;
+    outline: none;
+    box-shadow: blue;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+.radio{
+    display: none;
+    box-shadow: blue; 
+}
+.input-box label{
+    width: 50%;
+    padding: 5px;
+    background-color: azure;
+    display: inline-block;
+    float: none;
+    text-align: center;
+    border: 1px solid azure;
+}
+.input-box label:first-of-type{
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-right: none;
+}
+.input-box label:last-of-type{
+    border-top-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.radio:checked+label{
+    background-color: dodgerblue;
+    color: azure;
+    transition: 0.5s;
+}
+.input-box button{
+    width: 100%;
+    background-color: dodgerblue;
+    color: azure;
+    border: none;
+    padding: 5px;
+    border-right: 4px;
+    font-size: 15px;
+    transition: all 0.5px ease;
+    border-radius: 5px;
+}
+.input-box button:hover{
+    cursor: pointer;
+    background-color: dodgerblue;
+}
+
+
+/*------------account---------*/
+
+
+.signup-box{
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.login-box{
+    width: 360px;
+    height: 280px;
+    margin: auto;
+    border-radius: 3px;
+    background-color: azure;
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+}
+h4{
+    text-align: center;
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+
+input[type="button"]{
+    width: 300px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: dodgerblue;
+    color: azure;
+    font-size: 18px;
+}
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+.para-2{
+    text-align: center;
+    color: azure;
+    font-size: 15px;
+    margin-top: -10px;
+}
+.para-2 a{
+    color: blue
+}
+
+/*------cart items details------*/
+
+.cart-page{
+    margin: 80px auto;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+      
+    }
+    .cart-info{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    th{
+      text-align: left;
+      padding: 6px;
+      color: white;
+      background: blue;
+      font-weight: normal;
+    }
+    td{
+      padding: 20px 10px;
+    }
+    td input{
+      width: 50px;
+      height: 40px;
+      padding: 10px;
+    }
+    td a{
+      color: blue;
+      font-size: 50px;
+    }
+    td img{
+      width: 80px;
+      height: 80px;
+      margin-right: 20px;
+    }
+    .total-price{
+      display: flex;
+      justify-content: flex-end;
+    }
+    .total-price{
+      border-top: 5px solid blue;
+      width: 100%;
+      max-width: 400px;
+    }
+    td:last-child{
+      text-align: right;
+    }
+    th:last-child{
+      text-align: right;
+    }
+
+
+/*------------contact us---------------*/
+
+.container{
+    width: 80%;
+    margin: 30px auto; 
+}
+.contact-box{
+    background: azure;
+    display: flex;
+}
+.contact-left{
+    flex-basis: 60%;
+    padding: 20px 40px;
+}
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    background: blue;
+    color: dodgerblue;
+}
+h1{
+    margin-bottom: 10px;
+}
+.container p{
+    margin-bottom: 15px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid azure;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid dodgerblue;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: dodgerblue;
+}
+button{
+    background: dodgerblue;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: azure;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px blue;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: transparent;
+    color: white;
+}
+.contact-left h3{
+    color: blueviolet;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right h3{ 
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: blueviolet;
+}
+tr td:first-child{
+    padding: 20px;
+}
+tr td{
+   padding-top: 20px; 
+}
+.contact-info{
+    flex-basis: 50%;
+    padding: 40px;
+    background: blue;
+    color: dodgerblue;
+}
+h4{
+    margin-bottom: 10px;
+    color: blueviolet;
+}
+.fa{
+    float: none;
+    color: blueviolet;
+}
+.fa:hover{
+    background-color: blue;
+    color: azure;
+}
+
+  /*----footer------*/
+
+  .footer{
+      background:black;
+      color:blue;
+       font-size:20px ;
+       padding: 50px 0 20px;
+  }
+  .footer p{
+      color: blue;
+
+  }
+  .footer h3{
+      color:white;
+      margin-bottom: 30px;
+  }
+  .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+      min-width: 300px;
+      margin-bottom: 30px;
+  }
+.footer-col-1{
+    flex-basis: 40%;
+}
+.footer-col-2{
+   flex: 1;
+   text-align: center;
+}
+.footer-col-2 img{
+    width: 150px;
+    margin-bottom: 30px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 40px;
+}
+.app-logo img{
+    width: 300px;
+}
+.footer hr{
+    border: none;
+    background:grey;
+    height: 2px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 26px;
+    margin-right: 15px;
+    display: none;
+}
+
+/*-----media query for menu------*/
+
+@media only screen and (max-width: 800px){
+
+    nav ul{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background:grey;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/*-------media query for less than 600 screen size------*/
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    .single-product .row{
+        text-align: left;
+    }  
+    .single-product .col-2{
+        padding: 20px 0;
+    }  
+    .single-product h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .cart-info p{
+        display: none;   
+    } 
+}
+
+/*--------about us-------------*/
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: azure;
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: left;
+    width: 100%;
+}
+.image-section{
+    float: right;
+    width: 100%;
+}
+.image-section h3{
+    margin-top: 20px;
+    color: blueviolet;
+    }
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 27px;
+}
+.content h3{
+    margin-top: 20px;
+    color: blueviolet
+    
+}
+.content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.button{
+    margin-top: 30px;
+} 
+.button a{
+    background-color: black;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: blue;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.button a:hover{
+    background-color: azure;
+    color: white;
+}
+.social{
+    margin: 40px 40px;
+}
+.social i{
+    color: blue;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+.social i:hover{
+    color: azure;
+}
+@media screen and (max-widht: 760px){
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.image-section{
+    float: none;
+    width: 100%;
+} 
+.image-section h3{
+    margin-top: 20px;
+    color: blueviolet;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    font-size: 20px;
+}   
+.button{
+    text-align: center;
+}
+.button a{
+    padding: 10px 30px;
+}
+.social{
+    text-align: center;
+}
+
+
+}
